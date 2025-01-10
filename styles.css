@@ -325,8 +325,6 @@ nav ul a:hover {
     flex: 1;
 }
 
-    
-
 .project-info h4{
     font-family: "Acidic", sans-serif;
     font-size: 25px;
@@ -347,19 +345,33 @@ nav ul a:hover {
     flex: 1;
     display: inline;
 }
-.embed-container {
+
+/*ART GALLERY STYLES*/
+
+.art-item img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+}
+
+.art-grid img {
+    width: 100%;
+    display: grid;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.embed-container { /*necessary????????*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 20px;
     padding: 10px;
-}
-
-.embed iframe {
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-container {
@@ -378,6 +390,15 @@ nav ul a:hover {
     height: auto;
     border-radius: 8px;
     max-width: 30%;
+}
+
+/*lowk test*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    padding: 20px; 
+    align-items:flex-start;
 }
 
 #art{
@@ -481,5 +502,16 @@ nav ul a:hover {
     font-family: "HelveticaRound", sans-serif;
     color: var(--base-800);
     font-weight: normal;
+    line-height: 175%;
+}
+#resume{
+    padding: 100px 100px;
+    background-color: var(--base-100);
+
+    font-size: 20px;
+    text-align: left;
+    font-family: "HelveticaRound", sans-serif;
+    color: var(--base-400);
+    font-weight: 50;
     line-height: 175%;
 }
