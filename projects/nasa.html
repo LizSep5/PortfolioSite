@@ -56,65 +56,61 @@ onClick="toggleMobileMenu();">
         
            <div class="project-image">
             <img src="../imgs\design\nasa\NASAThumbnail.png" alt="NASA Techrise Thumbnail"> </div> 
+       
         </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4x3_b_OvJeA?si=Qcj1jxkyTlSskjtG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <br><br>
                 <h3>
                     Design Requirements
                 </h3>
                 <p>
                     Our experiment had to align with numerous NASA guidelines in order to ensure proper 
-                    performance in the harsh conditions of outer space. Including the following:
-                    <li>Able to withstand temperatures as low as -40 degrees F</li>
-                    <li>Withstand pressure as low as</li>
-                    <li>Fit into a 6"x6"x8" cubesat</li>
+                    performance in the harsh conditions of outer space, including the following:
+                    <li>Withstand temperatures as low as -40 degrees F</li>
+                    <li>Perform consistently in a 0 pressure environment </li>
+                    <li>Fit into a 4"x4"x8" cubesat</li>
                 </p>
 <br><br>
                 <h3>
-                    Ideation
+                    Design and build
                 </h3>
             <div class="project-container">
                 <section class= "project-info">
                     <p>
-                        Our Ideation process began with brainstorming ~100 ideas and each team member choosing
-                        their top two to flesh out in a sketch. From there, we each prototyped a low-fidelity model of our
-                        favorite. We analyzed these three ideas through a Feasibility vs. Attractivness
-                        ranking, eventually combining aspects from each design to land at the most attractive product for
-                        our timeline, "Gloria."
+                        To test the air at the edge of space for pollution, our team designed an
+                        instrumentation payload for the hot air balloon, choosing to use an Arduino REV 3
+                        for its small physical size and large memory.
+                        
+                        After planning our design in Onshape, our team constructed the payload structure
+                        using laser cut wood panels, attaching sensors to a custom circuit board seperate 
+                        from the Arduino.
                     </p>
                 </section>
                 <div class="project-image">
-                    <img src="../imgs\design\guitar\GuitarSketch.png" alt="Guitar Sketch"> </div>
+                    <img src="../imgs\nasa\nasa_build.jpg" alt="NASA Build"> </div>
                 </div>
             </div>
             
                 <br>
-                <h3>Process</h3>
-                As the CAD lead, I modeled our final design in Fusion360 so we could visualize
-                the parts we would need to assemble our guitar.
+                <h3>Programming</h3>
+                I worked with a team to obtain PM2.5 readings from the PMSA003I sensor, as well 
+                as obtain altitude and temperature data from the DPS310 and BNO055. I also monitored sensor 
+                readings during our 0-pressure test at Harvard University’s vacuum chamber to ensure that 
+                even in a vacuum environment, our gas sensors would still intake particulates.
                 <br>
                 <br>
-                We created our high-fidelity prototype out of the provided cutting board, utulizing tools like
-                the bandsaw and scroll saw to cut the body and details. I soldered the electronics and we conducted
-                several tests before assembly to ensure our pickup produced a sonsistently clean sound.
                 <div class="project-image">
-                    <img src="../imgs\design\guitar\GuitarCAD1.png" alt="Guitar CAD1"> </div>
+                    <img src="../imgs\nasa\nasa_harvard.webp" alt="Vacuum Chamber Testing"> </div>
                 </div>
                 <br>
                 <h3>Final Product</h3>
-                The final product includes several design features which address our original design requirements:
-                <p>
-                    <li>Sound: f-holes and the semi-hollow body produces a warm sound while limiting feedback. 1 tone and 1 volume knob
-                        allow the user to further control sound quality. </li>
-                    <li>Comfort: the semi-hollow body makes the guitar lightweight. We also made the guitar body slim,
-                        so the player can easily strum.
-                    </li>
-                    <li>Style: f-holes double as a classic jazz style feature, as well as the oiled, wooden body.</li>
-                    <li>Affordability: through our BOM calculations, the guitar costs less than $200 to produce, beating out
-                        our market comparisons.</li>
+                Our payload launched on July 21st, 2023. It sucessfully collected 4 hours of data over the Midwest
+                United States during a time when the California wildfires were raging strong. We shared this data with NASA and various other researchers to
+                contribute to climate research
                     </p>
                 <br>
                 <div class="project-image">
-                    <img src="../imgs\design\guitar\GuitarHIFI.png" alt="Guitar High Fidelity"> </div>
+                    <img src="../imgs\nasa\nasa_final_build.png" alt="NASA Final Build"> </div>
                 </div>
         </section>
         
