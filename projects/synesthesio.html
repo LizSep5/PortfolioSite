@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>synesthes.io</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+   <header>
+    <a href="../index.html" class ="logo-holder">
+        <div class = "logo-text">liz sepulveda</div>
+    </a>
+
+<!--Navigation-->
+    <nav>
+<ul id="menu">
+<li> <a href="../art.html">art</a></li>
+<li><a href="../design.html">design</a></li>
+<li><a href="../more.html">more</a></li>
+<li><a href="../index.html#about">about</a></li>
+</ul>
+
+<a href="#" class="mobile-toggle"
+onClick="toggleMobileMenu();">
+<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+</svg> </a>
+
+    </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Project Description -->
+        <section id="jazzguitar">
+            <h2>Synesthes.io</h2>
+            <div class="project-container">
+                <section class= "project-info">
+                    <p>Personal Project</p>
+                    <br>
+                    <h4>Completed:</h4> November 2022
+                    <br><h4>Timeline:</h4> 2 Months (~ 50 hrs)
+                    <br><h4>Role:</h4> Game Designer and Developer, Electronics, Programming
+
+                    <br><br>
+                    <p>
+                        Named after Synesthesia, the phenomenon of confusing multiple senses,
+                        Synesthes.io is a gaming experience, complete with a custom controller,
+                        that is enhanced by interaction with the world around us.
+                    </p>
+                </section>
+        
+           <div class="project-image">
+            <img src="../imgs\design\synesthesio\SynesthesioThumbnail.jpg" alt="Synesthes.io Thumbnail"> </div> 
+        </div>
+                <br><br>
+                <h3>
+                    Design Requirements
+                </h3>
+                <p>
+                   In order to improve upon modern gaming experiences by drawing from the conditions
+                   of the real-world, Synesthes.io needed to achieve the following: 
+                    <li>Player input from a controller</li>
+                    <li>Synthesis of this data into game changes</li>
+                    <li>Real-time game updates</li>
+                </p>
+<br><br>
+                <h3>
+                    Ideation
+                </h3>
+            <div class="project-container">
+                <section class= "project-info">
+                    <p>
+                        I based the game around my own synesthesia experience (color -> sound). 
+                        In order to synthesize sound data from the real world, the controller 
+                        would include an electret microphone, which would pick up sound frequency 
+                        data (pitch). Thus, with varying musical atmospheres and and sound environments,
+                        the game would appear different to each user.
+                    </p>
+                </section>
+                <div class="project-image">
+                    <img src="../imgs\design\\.png" alt=""> </div>
+                </div>
+            </div>
+            
+                <br>
+                <h3>Process</h3>
+                Creating the game consisted of three main parts: creating the custom controller,
+                creating the game interface, and integrating the two using a Serial Port.
+                <br>
+                <br>
+                To create the controller, I attached an Arduino Uno to a simple plastic plate.
+                I added a BNO055 orientation sensor to detect the roll, pitch, and yaw of the 
+                controller, as well as an SPW2430 microphone to collect sound frequency data from the player's
+                encvironment. 
+                <div class="project-image">
+                    <img src="../imgs\design\\.png" alt=""> </div>
+                </div>
+                <br>
+                I created the game interface in Unity, modeling all 3D assets within the software.
+                It is a simple "infinite runner" style game, with a player manuvering around
+                obstacles followed by a camera. When the player falls off the platform and hits lava,
+                the game resets, but otherwise runs forever.
+                <br>
+                <br>
+                The controller communicates to the game through the Serial port, which involved integration 
+                from C++ to C#.                
+
+                <h3>Programming</h3>
+                
+
+
+                <h3>Final Product</h3>
+                The final product includes several design features which address our original design requirements:
+                <ul>
+                    <li>Sound: f-holes and the semi-hollow body produces a warm sound while limiting feedback. 1 tone and 1 volume knob
+                        allow the user to further control sound quality. </li>
+                    <li>Comfort: the semi-hollow body makes the guitar lightweight. We also made the guitar body slim,
+                        so the player can easily strum.
+                    </li>
+                    <li>Style: f-holes double as a classic jazz style feature, as well as the oiled, wooden body.</li>
+                    <li>Affordability: through our BOM calculations, the guitar costs less than $200 to produce, beating out
+                        our market comparisons.</li>
+                </ul>
+                <br>
+                <div class="project-image">
+                    <img src="../imgs\design\guitar\GuitarHIFI.png" alt="Guitar High Fidelity"> </div>
+                </div>
+        </section>
+        
+
+    </main>
+
+</body>
+</html>
