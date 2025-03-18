@@ -72,6 +72,7 @@ h3{
 }
 
 
+
 /* HERO SECTION */
 .hero {
     text-align: center; /* Center the text */
@@ -218,7 +219,6 @@ nav ul a:hover {
 #about {
     padding: 100px 100px;
     background-color: var(--base-100);
-
     font-size: 20px;
     text-align: left;
     font-family: "HelveticaRound", sans-serif;
@@ -514,4 +514,12 @@ nav ul a:hover {
     color: var(--base-400);
     font-weight: 50;
     line-height: 175%;
+}
+.about-image img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+    flex: 1;
+    align-items: right;
+
 }
