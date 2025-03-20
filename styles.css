@@ -106,7 +106,7 @@ h3{
 /* DESCRIPTION */
 .description {
     font-family: "HelveticaRound", sans-serif;
-    font-size: 32px; /* Slightly larger font size */
+    font-size: 25px; /* Slightly larger font size */
     color: var(--base-800); /* Default text color */
     line-height: 1.6; /* Improve readability */
 }
