@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Characterization Device for SharkNinja</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+   <header>
+    <a href="../index.html" class ="logo-holder">
+        <div class = "logo-text">liz sepulveda</div>
+    </a>
+
+<!--Navigation-->
+    <nav>
+<ul id="menu">
+<li> <a href="../art.html">art</a></li>
+<li><a href="../design.html">design</a></li>
+<li><a href="../music.html">music</a></li>
+<li><a href="../more.html">more</a></li>
+<li><a href="../index.html#about">about</a></li>
+</ul>
+
+<a href="#" class="mobile-toggle"
+onClick="toggleMobileMenu();">
+<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+</svg> </a>
+
+    </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Project Description -->
+        <section id="jazzguitar">
+            <h2>SharkNinja Fan Sensor</h2>
+            <div class="project-container">
+                <section class= "project-info">
+                    <p>ENGN 0620 Design Brief | Brown University</p>
+                    <br>
+                    <h4>Completed:</h4> May 2025
+                    <br><h4>Timeline:</h4> 3 Months (10 hrs/week)
+                    <br><h4>Role:</h4> Design, Electronics
+
+                    <br><br>
+                    <p>
+                        To aid in the testing of their new fan products, our team created a fan testing
+                        device for the household product company SharkNinja. 
+                    </p>
+                </section>
+        
+           <div class="project-image">
+            <img src="../imgs\design\fan\FanSensorHeader1.jpg" alt="Fan Sensor Thumbnail"> </div> 
+        </div>
+                <br><br><br>
+
+                <h3>
+                    Problem Definition and Research
+                </h3>
+                <p>
+                    Our team met with a client from SharkNinja to identify goals for our device. Our device
+                    would replace the lab's existing solutions which are large, difficult 
+                    to move, and expensive, requiring 36 individual anemometers. After
+                    conducting a literature review of existing air flow characterization systems,
+                    we concluded that we needed to create an array for data collection at many discrete points, and
+                     a base to move the sensor around the array.
+                </p>
+                <br>
+                <h3>
+                    Design Requirements
+                </h3>
+                <p>
+                    
+                    <li>Data to Measure: Volumetric Air Flow, Temperature</li>
+                    <li>Size Specifications: 2x2ft Measurement Field from 6 feet away from user</li>
+                    <li>Qualities: Compact, Easy to Move, Reproducible at a Reasonable Cost</li>
+                </p>
+                
+<br><br><br>
+                <h3>
+                    Ideation and Fabrication
+                </h3>
+                <div class="project-container">
+                    <section class= "project-info">
+                        <p>
+                            Our array brainstorm led us to two possible options, an X-Y Grid or Radial 
+                        Grid. We made preliminary prototypes of each and landed on an X-Y Grid due to
+                         concerns with the torque and imbalance of the Radial Grid.
+                        </p>
+                    </section>
+                    <div class="project-image">
+                        <img src="../imgs\design\fan\FanSensorSketches.png" alt="Sketches"> </div>
+                    </div>
+            
+           
+
+                <p>
+                        For our base, we tested several options, including a triangular truss and 
+                         "whiteboard" style legs, choosing the whiteboard style due to feasibility.
+<br><br>
+                        After constructing a prototype out of scrap wood, we conducted a Vibration Test and realized that
+                        the base swayed significantly due to unrestricted axes of movement on the joints. After constructing
+                        a second prototype out of stronger, scrap metal, we confirmed that this was a structural and not material problem.
+                        To combat this, we
+                         made each joint a truss by adding supports connecting the legs to the feet and top of the structure.
+
+                </p>
+                <br><div class="project-image">
+                    <img src="../imgs\design\fan\FanSensorPrototypes.png" alt="Fan Sensor Prototypes"> </div>
+                </div><br><br>
+
+            <div class="project-container">
+                <section class= "project-info">
+                    <p>
+                        To construct the final version, we used aluminum 20/20 extrusions and two OpenBuilds linear actuators,
+                         all readily availible and highly adaptable components that would
+                         ensure easy reproduction. We cut the pieces down on the BDW's bandsaw and table saw and assembled them
+                          with a variety of connecting brackets.
+                    </p>
+                </section>
+                <div class="project-image">
+                    <img src="../imgs\design\fan\FanSensorTableSaw.JPG" alt="Table Saw"> </div>
+                </div>
+            
+            <br>
+        <br>
+        <div class="project-container">
+            <section class= "project-info">
+                <p>
+                    To collect volumetric air flow data, our design employs a digital anemometer (Modern Device Rev C anemometer),
+                     which we calibrated in the Brown Design Workshop's wind tunnel. It also features a DHT11 Humidity Sensor 
+                to determine the temperature, humidity, and relative humidity of SharkNinja fans, some of which having a mist feature.
+
+                </p>
+            </section>
+            <div class="project-image">
+                <img src="../imgs\design\fan\WindTunnel.jpg" alt="Wind Tunnel"> </div>
+            </div>
+        </div>
+        <br>
+    <br>
+<p>
+    To house our electronics, I designed a removable, multi-stage finger-jointed box which we fabricated using
+                    lasered acrylic and glue. The final version features a velcro strap for easy removability.
+</p>
+        <br><div class="project-image">
+            <img src="../imgs\design\fan\FanSensorCasing.png" alt="Fan Sensor Electronics Housing"> </div>
+        </div>
+                <br><br>
+                <h3>Final Product</h3>
+                
+                <br><br><div class="project-image">
+                    <img src="../imgs\design\fan\FanSensorFinal1.JPG" alt="Fan Sensor Final 1"> </div>
+                </div>
+                <br><br><div class="project-image">
+                    <img src="../imgs\design\fan\FanSensorFinal2.JPG" alt="Fan Sensor Final 2"> </div>
+                </div>
+                <br><br><div class="project-image">
+                    <img src="../imgs\design\fan\FanSensorFinal3.JPG" alt="Fan Sensor Final 3"> </div>
+                </div>
+                <br><br><div class="project-image">
+                    <img src="../imgs\design\fan\FanSensorFinal4.JPG" alt="Fan Sensor Final 4"> </div>
+                </div>
+                <br><br><div class="project-image">
+                    <img src="../imgs\design\fan\FanSensorFinal5.JPG" alt="Fan Sensor Final 5"> </div>
+                </div>
+
+                <br><br>
+                <h3>Future Improvements</h3>
+               
+                    <li>Replace Rev C anemometer with higher percision Rev P model</li>
+                    <li>Replace current wiring with PCB</li>
+                    <li>Add digital user interface, possibly with training guide for new users</li>
+                
+                
+                
+        </section>
+        
+
+    </main>
+
+</body>
+</html>

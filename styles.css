@@ -84,7 +84,7 @@ h3{
     justify-content: center; 
 }
 .hero .name {
-    font-size: 80px; /* Large font size for name */
+    font-size: 90px; /* Large font size for name */
     font-family: "Acidic", sans-serif;
     font-weight: normal; 
     color: var(--base-800); 
@@ -106,7 +106,7 @@ h3{
 /* DESCRIPTION */
 .description {
     font-family: "HelveticaRound", sans-serif;
-    font-size: 25px; /* Slightly larger font size */
+    font-size: 32px; /* Slightly larger font size */
     color: var(--base-800); /* Default text color */
     line-height: 1.6; /* Improve readability */
 }
@@ -117,7 +117,7 @@ h3{
     color: var(--base-800); /* Default text color */
     text-decoration: bold; /* Remove underline */
     font-weight: auto; /* Make them stand out */
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.2s ease; /* Smooth color transition */
 }
 
 /* Hover effect */
